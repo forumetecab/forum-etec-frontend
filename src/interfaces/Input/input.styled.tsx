@@ -17,6 +17,5 @@ export const Field = styled.input`
 
   &:focus {
     outline: 2px solid ${theme.color.red};
-    background-color: #f5f5f5;
   }
 `

@@ -1,7 +1,9 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
+import Sub from "@pages/Sub/Sub";
 import React from "react";
+import Congrats from "@pages/Congrats/Congrats";
 const Gallery = React.lazy(() => import("./pages/Gallery/Gallery"));
 
 const router = createBrowserRouter([

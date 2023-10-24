@@ -8,8 +8,6 @@ import { Download } from 'lucide-react'
 import { toPng } from 'html-to-image'
 import {Button, Tag} from "@interface/index";
 
-
-
 const Congrats = () => {
   const { state } = useLocation()
   const nav = useNavigate()

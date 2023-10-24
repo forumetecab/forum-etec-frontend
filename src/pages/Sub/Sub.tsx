@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation, Navigate, useNavigate } from "react-router-dom";
 import * as S from "./sub.styled";
 import subImage from "@asset/sub.jpeg";
-import { Paragraph } from "src/interfaces/Text";
+import { Paragraph } from "@interface/Text";
 import { ArrowLeft } from "lucide-react";
 import { useMutation } from "react-query";
 import api from "src/services/api";
@@ -23,14 +23,14 @@ interface ISub {
 
 const Sub = () => {
   const {
-    state: { day, thematic },
+    state,
   } = useLocation();
   const nav = useNavigate();
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [date, setDate] = React.useState<Value>(null);
   const mutation = useMutation({
-    mutationKey: ["sub", day, thematic],
+    mutationKey: ["sub", state?.day, state?.thematic],
     mutationFn: (sub: ISub) => {
       return api.post("/user", sub).then((res) => res.data);
     },
@@ -51,8 +51,8 @@ const Sub = () => {
       fullName: name.trim(),
       email: email.trim(),
       birthday: dateValue,
-      day,
-      thematic,
+      day: state?.day,
+      thematic: state?.thematic,
     };
 
     mutation.mutate(sub, {
@@ -69,7 +69,7 @@ const Sub = () => {
     });
   };
 
-  if (!day || !thematic) return <Navigate to="/" />;
+  if (!state) return <Navigate to="/" />;
   return (
     <S.Container>
       <S.Image src={subImage} />
