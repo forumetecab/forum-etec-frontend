@@ -1,9 +1,9 @@
-import adm26 from "src/assets/gallery/2023/adm-26";
-import enf28 from "src/assets/gallery/2023/enf-28";
-import i2022 from "src/assets/gallery/2022";
-import edf27 from "src/assets/gallery/2023/edf-27";
-import tur27 from "src/assets/gallery/2023/tur-27";
-import inf29 from "src/assets/gallery/2023/inf-29";
+import adm26 from "@asset/gallery/2023/adm-26";
+import enf28 from "@asset/gallery/2023/enf-28";
+import i2022 from "@asset/gallery/2022";
+import edf27 from "@asset/gallery/2023/edf-27";
+import tur27 from "@asset/gallery/2023/tur-27";
+import inf29 from "@asset/gallery/2023/inf-29";
 
 const photosData: IGallery[] = [
   {

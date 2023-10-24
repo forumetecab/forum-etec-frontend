@@ -1,13 +1,11 @@
 import React from "react";
 import * as S from "./home.styled";
-import Button from "src/interfaces/Button";
 import { ArrowRightCircle, Calendar, Camera } from "lucide-react";
-import Tag from "src/interfaces/Tag";
-import { Paragraph } from "src/interfaces/Text";
-import event from "src/data/event";
+import {Button, Slides, Tag} from "@interface/index";
+import { Paragraph } from "@interface/Text";
+import event from "@data/event";
 import { useNavigate } from "react-router-dom";
-import Slides from "src/interfaces/Slides/Slides";
-import { days } from "src/data/days";
+import { days } from "@data/days";
 import Loc from "./components/Loc";
 import Header from "./components/Header";
 import EventCard from "./components/EventCard";

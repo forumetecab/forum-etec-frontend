@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from "./header.styled"
-import logoEvento from "../../assets/logo-evento.jpeg"
+import logoEvento from "@asset/logo-evento.jpeg"
 
 const Header = () => {
   return (

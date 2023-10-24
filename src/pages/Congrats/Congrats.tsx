@@ -1,13 +1,14 @@
 import React from 'react'
 import * as S from "./congrats.styled"
-import subImage from '../../assets/sub.jpeg'
-import logoEtec from '../../assets/logo-etec.png'
+import subImage from '@asset/sub.jpeg'
+import logoEtec from '@asset/logo-etec.png'
 import { Paragraph } from 'src/interfaces/Text'
-import Tag from 'src/interfaces/Tag'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
-import Button from 'src/interfaces/Button'
 import { Download } from 'lucide-react'
 import { toPng } from 'html-to-image'
+import {Button, Tag} from "@interface/index";
+
+
 
 const Congrats = () => {
   const { state } = useLocation()

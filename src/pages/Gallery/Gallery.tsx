@@ -1,11 +1,10 @@
 import React from "react";
 import photosData2023 from "src/data/photos2023";
-import * as S from "./gallery.styled";
-import Tag from "../../interfaces/Tag";
-import Button from "src/interfaces/Button";
 import { ArrowLeft, Camera, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Images from "./Images";
+import * as S from "./gallery.styled";
+import {Button, Slides, Tag} from "@interface/index";
 
 const photosData = [photosData2023];
 

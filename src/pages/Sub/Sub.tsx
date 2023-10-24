@@ -1,19 +1,17 @@
 import React from "react";
 import { useLocation, Navigate, useNavigate } from "react-router-dom";
 import * as S from "./sub.styled";
-import subImage from "../../assets/sub.jpeg";
+import subImage from "@asset/sub.jpeg";
 import { Paragraph } from "src/interfaces/Text";
-import Tag from "src/interfaces/Tag";
-import Input from "src/interfaces/Input";
-import Button from "src/interfaces/Button";
 import { ArrowLeft } from "lucide-react";
 import { useMutation } from "react-query";
 import api from "src/services/api";
 import { AxiosError } from "axios";
-import Slides from "src/interfaces/Slides/Slides";
 import DatePicker from "react-date-picker";
 import "react-date-picker/dist/DatePicker.css";
 import { Value } from "node_modules/react-date-picker/dist/esm/shared/types";
+import {Button, Slides, Tag, Input} from "@interface/index";
+
 
 interface ISub {
   fullName: string;

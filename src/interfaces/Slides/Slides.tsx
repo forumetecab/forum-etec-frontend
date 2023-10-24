@@ -2,12 +2,12 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import * as S from "./slides.styled";
-import imgCrono from "../../assets/banners/img-crono.jpeg";
-import img26 from "../../assets/banners/img-26.jpeg";
-import img27 from "../../assets/banners/img-27.jpeg";
-import img272 from "../../assets/banners/img-27-2.jpeg";
-import img28 from "../../assets/banners/img-28.jpeg";
-import img29 from "../../assets/banners/img-29.jpeg";
+import imgCrono from "@asset/banners/img-crono.jpeg";
+import img26 from "@asset/banners/img-26.jpeg";
+import img27 from "@asset/banners/img-27.jpeg";
+import img272 from "@asset/banners/img-27-2.jpeg";
+import img28 from "@asset/banners/img-28.jpeg";
+import img29 from "@asset/banners/img-29.jpeg";
 
 const images: { [key: string]: string[] } = {
   "25": [img26],
