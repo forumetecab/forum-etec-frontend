@@ -34,7 +34,7 @@ const Slides = ({ day }: Props) => {
         emulateTouch
         interval={8000}
       >
-        {images[day].map((img, index) => (
+        {images[day]?.map((img, index) => (
           <S.Image src={img} key={index} />
         ))}
       </Carousel>

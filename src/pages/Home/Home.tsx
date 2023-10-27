@@ -54,7 +54,7 @@ const Home = () => {
         </Paragraph>
 
         <S.CardWrapper>
-          {days.map((d) => (
+          {days?.map((d) => (
             <S.Card
               key={d.day}
               onClick={() => setSelectedDay(d.day as TypeDays)}
@@ -90,6 +90,7 @@ const Home = () => {
         <Slides day={selectedDay} />
         <Loc />
       </S.Content>
+
     </S.Container>
   );
 };

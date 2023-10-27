@@ -4,7 +4,7 @@ import { ArrowLeft, Camera, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Images from "./Images";
 import * as S from "./gallery.styled";
-import {Button, Slides, Tag} from "@interface/index";
+import {Button, Tag} from "@interface/index";
 
 const photosData = [photosData2023];
 

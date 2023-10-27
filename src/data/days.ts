@@ -1,7 +1,7 @@
 export const days: { day: TypeDays; time: string }[] = [
   {
     day: "25",
-    time: "19h20h às 22h40",
+    time: "20h20h às 22h40",
   },
   {
     day: "26",
