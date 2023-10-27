@@ -1,2 +1,2 @@
 # Fórum Tecnológico Interdisciplinar
-[Documentação]([https://google.com](https://lazy-plum-cockatoo-wig.cyclic.cloud/)https://lazy-plum-cockatoo-wig.cyclic.cloud/)
+[Documentação](https://lazy-plum-cockatoo-wig.cyclic.cloud/)
